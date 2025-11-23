@@ -1,0 +1,28 @@
+.booklist-container {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f5f7ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.booklist-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.booklist-input input {
+  flex: 1;
+  padding: 8px 10px;
+}
+
+.booklist-items li {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}

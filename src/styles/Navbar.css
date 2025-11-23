@@ -1,0 +1,12 @@
+/* ... (Style Navbar yang sudah ada) ... */
+
+/* Styling khusus untuk link detail sebagai penanda "Contoh" */
+.nav-item.example-link {
+    background-color: #fcb69f; /* Warna kontras */
+    color: #333;
+    font-weight: bold;
+}
+.nav-item.example-link:hover {
+    background-color: #ffecd2;
+    color: #333;
+}

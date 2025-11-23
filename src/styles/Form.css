@@ -1,0 +1,31 @@
+.book-form {
+background: white;
+padding: 20px;
+border-radius: 12px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+.book-form input {
+padding: 12px;
+border: 2px solid #ccc;
+border-radius: 8px;
+}
+
+
+.book-form button {
+padding: 12px;
+background: #48bfe3;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+
+
+.book-form button:hover {
+background: #0096c7;
+}

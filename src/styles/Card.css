@@ -1,0 +1,40 @@
+.book-card {
+background: #ffffff;
+padding: 20px;
+border-radius: 12px;
+margin-bottom: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.book-card h3 {
+margin: 0;
+color: #3a0ca3;
+}
+
+
+.actions {
+margin-top: 10px;
+display: flex;
+gap: 10px;
+}
+
+
+.edit {
+background: #4cc9f0;
+border: none;
+padding: 8px 14px;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+}
+
+
+.delete {
+background: #e63946;
+border: none;
+padding: 8px 14px;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+}

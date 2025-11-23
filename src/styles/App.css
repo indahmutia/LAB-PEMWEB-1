@@ -1,0 +1,198 @@
+/* === GLOBAL === */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+/* === WRAPPER UTAMA === */
+.App {
+  width: 100%;
+  max-width: 1000px;    /* Biar tidak terlalu melebar */
+  margin: 0 auto;       /* Bikin seluruh konten center */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* === TITLE === */
+.main-title {
+  text-align: center;
+  color: #6a0dad;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* === CONTAINER FORM + TABEL === */
+.book-management-container {
+  width: 100%;
+  max-width: 900px;      /* Kotak tidak terlalu besar */
+  margin: 20px auto;     /* Biar center */
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === FORM === */
+.form-group input,
+.add-button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  background-color: #6a0dad;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
+
+/* === TABLE === */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f7e6ff;
+  color: #333;
+  font-weight: bold;
+}
+
+/* === BUTTONS === */
+.edit-btn,
+.delete-btn,
+.detail-link {
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.detail-link {
+  background-color: #007bff;
+  color: white;
+}
+
+/* === DETAIL PAGE === */
+.book-detail-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.detail-title {
+  color: #6a0dad;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #6a0dad;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 600px) {
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .book-management-container {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  /* TABLE RESPONSIVE MODE */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    height: 0;
+    visibility: hidden;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    color: #6a0dad;
+    text-align: left;
+  }
+
+  .action-buttons button,
+  .detail-link {
+    width: 48%;
+    margin-bottom: 8px;
+  }
+}
